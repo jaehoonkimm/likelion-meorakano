@@ -1,4 +1,7 @@
-# likelion-meorakano
+# likelion-meorakano 🦁
+
+Take a look!
+>>>>>>> 70c0a46ffa48cae4236edd65110010b46ccd0262
 
 ## Summary
 > End point URL : http://likelion-meorakano.s3-website.ap-northeast-2.amazonaws.com
