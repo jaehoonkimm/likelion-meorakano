@@ -1,3 +1,3 @@
 # likelion-meorakano 😸
 
-#Take a look!
+Take a look!
