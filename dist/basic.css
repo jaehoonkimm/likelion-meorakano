@@ -24,6 +24,7 @@ li a {
     /* padding: 20%, 100%; */
     text-decoration: none;
 }
+
 li a:hover:not(.active) {
     /* background-color: #555; */
     background-color: #4CAF50;
