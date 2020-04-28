@@ -1,6 +1,3 @@
-# likelion-meorakano
-
-=======
 # likelion-meorakano 🦁
 
 Take a look!
