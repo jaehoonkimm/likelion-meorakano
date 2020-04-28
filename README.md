@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # likelion-meorakano
 
-This is MH branch
 =======
 # likelion-meorakano 🦁
 
