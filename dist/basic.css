@@ -1,0 +1,99 @@
+html, body {
+	width: 100%; height: 100%;
+}
+
+.tt{
+    background-color: black;
+    color: white;
+}
+
+ul {
+    text-align: center;
+    font-size: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+/* mouse over시에 active => 배경 및 font 색상 변경*/
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.information-tip{
+    cursor: default;
+}
+
+.information-tip:before{
+	font-weight: bold;
+}
+
+.information-tip:hover p{
+	display:block;
+	transform-origin: 100% 0%;
+	-webkit-animation: fadeIn 1.0s ease-in-out;
+	animation: fadeIn 1.0s ease-in-out;
+}
+
+.information-tip p{
+    display: none;
+	text-align: left;
+	background-color: #1E2021;
+	padding:10%;
+    width: 30%;
+    height: 50%;
+	position: absolute;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: 20%;
+    top: 5%;
+	color: #FFF;
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+
+.help-tip p:before{
+	position: absolute;
+	content: '';
+	width:0;
+	height: 0;
+	border:6px solid transparent;
+	border-bottom-color:#1E2021;
+	right:10px;
+	top:-12px;
+}
+
+
+.help-tip p:after{
+	width:100%;
+	height:40px;
+	content:'';
+	position: absolute;
+	top:-40px;
+	left:0;
+}
+
+@-webkit-keyframes fadeIn {
+	0% { 
+		opacity:0; 
+		transform: scale(0.6);
+	}
+	100% {
+		opacity:100%;
+		transform: scale(1);
+	}
+}
+ 
+@keyframes fadeIn {
+	0% { opacity:0; }
+	100% { opacity:100%; }
+}​ 
