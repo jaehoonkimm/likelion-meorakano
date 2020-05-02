@@ -1,0 +1,20 @@
+#topMenu {
+    height: 30px;
+    width: 850px
+}
+
+
+ul li {
+    list-style: none;
+    color: white;
+    background-color : #2d2d2d;
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;    
+}
+
+.menuLink {
+    text-decoration: none;
+    color: white;
+}
