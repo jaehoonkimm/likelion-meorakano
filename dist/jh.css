@@ -42,13 +42,13 @@ body {
 .topBar {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 0;
     background-color: darkslategrey;
     list-style-type: none;
     justify-content: flex-end;
-    position: fixed;
+    position: absolute;
     top:0;
 }
 
