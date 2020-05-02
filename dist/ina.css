@@ -1,0 +1,89 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px; 
+    background-color: seagreen;
+}
+
+.title{
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+    width: 65%;
+}
+
+.menu{
+    width: 35%;
+}
+
+#nav li{
+    float: left;
+    text-align: right;
+    margin-top: 15px;
+    margin-left: 20px;
+    list-style: none;
+    color: white;
+}
+#nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+.bottom{ 
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    height: 100%;
+    width: 480px;
+}
+
+.right{
+    height: 100%;
+    width: 480px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+}
+
+.content{
+    width: 960px;
+    height: 90%;
+    background-color: darkgray;
+}
+
+.subTitle{
+    width: 960px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo2{
+
+}
+
+.searchBar{
+
+}
+
+.clock{
+    
+}
