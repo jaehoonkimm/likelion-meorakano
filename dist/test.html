@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 페이지</title>
+</head>
+<body>
+    <h1>자바 스크립트 한스푼 </h1>
+    <script>
+        const num = 12;
+
+        let Array = ["월","화",false,true,100,num];
+        console.log(Array);
+
+        const length = Array.length;
+        console.log(length);
+
+        let newArray = Array.slice(0,4);
+        console.log(newArray);
+
+        newArray.splice(0,2,"수","목");
+        console.log(newArray);
+
+        newArray.unshift("월");
+        console.log(newArray);
+
+        newArray.push(2020);
+        console.log(newArray);
+    </script>
+</body>
+</html>
