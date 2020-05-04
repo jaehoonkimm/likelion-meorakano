@@ -8,24 +8,53 @@
 </head>
 <body>
     <nav>
-        <ul class= "nav-container"> 
+        <ul class= "nav-container">
             <li class = "nav-item"> <a href=""> 만든이</a></li>
             <li class = "nav-item"> <a href=""> 소개</a></li>
+            <li class = "nav-item"> <a href=""> 사투리지도</a></li>
             <li class = "nav-item"> <a href=""> 베스트게시물</a></li>
         </ul>
     </nav>
 
-    <div style="padding: 50px 0px 250px 250px;"> 
-        <div class="top_bar" >
-            <div style="width: 300px;">
-                <img src="머라카노_로고.jpg" width="250" height="100">
+    <div style="display: flex; flex-direction: column; width: 100%;">
+        <div style="padding: 100px 0px 50px 250px; ">
+            <div class="top_bar" >
+                <div >
+                    <img src="머라카노_로고.jpg" width="250" height="100">
+                </div>
+                <div style="padding: 40px 60px 40px 60px;">
+                    <div class = "search_bar"style="width: 400px;height: 40px;" >
+                        <input class ="input" type="text" placeholder="검색어 입력">
+                        <button class="search_button">검색</button>
+                    </div>
+                </div>
+                <div style= "padding-top: 20px;">
+                    <h1 class = "h1-clock" style="text-align: center;"></h1>
             </div>
-            <div class = "search_bar"style="width: 400px; height =40px;" >
-                <input class ="input" type="text" placeholder="검색어 입력">
-                <button>검색</button>
-            </div>
+        </div>
+
+    </div>
+
+    <div class ="main_contents">
+        <div class = "content1">
+            <button type="button" id="top">위로</button>
+            <button type="button" id="bottom">아래로</button>
+            아아
+        </div>
+        <div class = "content2">
+            <button type="button" id="top">위로</button>
+            <button type="button" id="bottom">아래로</button>
+            헤헤
+        </div>
+
+        <div class = "content3">
+            <button type="button" id="top">위로</button>
+            <button type="button" id="bottom">아래로</button>
+            얍얍
         </div>
     </div>
     
+    <script src = "myeonghwan_clock.js" ></script>
+    <script src="myeonghwan_scroll.js"></script>
 </body>
 </html>
