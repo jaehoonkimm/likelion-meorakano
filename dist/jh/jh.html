@@ -9,22 +9,29 @@
 
 <body onload="printClock()">
     <div style="display: flex; flex-direction: row;">
-        <ul style="list-style-type: none;">
-            <li><a href="./index.html" style="color: white;">뒤로가기</a></li>
+        <ul style="list-style-type: none; display: flex; flex-direction: row; margin-top: 0;">
+            <li class="nav-menu"> <a href="index.html">뒤로가기</a></li>
+            <li class="nav-menu" style="font-weight: bold;"> <a href="jh.html">머라카노</a></li>
         </ul>
         <nav>
             <ul class="topBar">
-                <li class="nav-menu" style="font-weight:bold; height: 100%; width: 10%; text-align: center;"> <a href="">머라카노</a></li>
-                <li class="nav-menu"> <a href="">Shop</a></li>
-                <li class="nav-menu"> <a href="">Community</a></li>
-                <li class="nav-menu"> <a href="">그냥</a></li>
-                <li class="nav-menu"> <a href="">메뉴</a></li>
+                <li class="nav-menu"> <a href="">서울사투리</a></li>
+                <li class="nav-menu"> <a href="">경기사투리</a></li>
+                <li class="nav-menu"> <a href="">강원도사투리</a></li>
+                <li class="nav-menu"> <a href="">대전사투리</a></li>
+                <li class="nav-menu"> <a href="">부산사투리</a></li>
+                <li class="nav-menu"> <a href="">대구사투리</a></li>
+                <li class="nav-menu"> <a href="">울산사투리</a></li>
+                <li class="nav-menu"> <a href="">충청도사투리</a></li>
+                <li class="nav-menu"> <a href="">전라도사투리</a></li>
+                <li class="nav-menu"> <a href="">경상도사투리</a></li>
+                <li class="nav-menu"> <a href="">제주도사투리</a></li>
             </ul>
         </nav> 
     </div>
     <div id="objCont">
         <div id="objBox">
-            <div style="width: 20%; background-color: skyblue;">
+            <div style="width: 30%; background-color: skyblue; margin-left: 3%;">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png" width="100%" height="100%" style="text-align: center;">
             </div>
             <div style="width:60%; background-color: skyblue;">
@@ -37,9 +44,21 @@
 
 <div id="background" style="height: 100%; width: 100%">
     <div id="main_body" style="display: flex; flex-direction: column;">
-        <div style="margin-top: 1.5%; background-color:oldlace; height: 50%;">
+        <div class="main_board" style="margin-top: 1.5%; background-color:oldlace; height: 50%;">
+            <h1 style="text-align: center;">오늘의 사투리</h1> <br /><br />
+            <p class="dialect_sent">제주도 방언으로 고양이는 고냉이이다.</p>
+            <p class="dialect_sent">제주도 방언으로 개는 강생이이다.</p>
+            <p class="dialect_sent">제주도 방언으로 돼지는 도새기이다.</p>
+            <p class="dialect_sent">제주도 방언으로 독수리는 똥소레기이다.</p>
+            <p class="dialect_sent">제주도 방언으로 병아리는 빙애기이다.</p>
         </div>
-        <div style="margin-bottom:1.5%; margin-top: 1.7%; background-color: oldlace; height: 50%;">
+        <div class="main_board" style="margin-bottom:1.5%; margin-top: 1.7%; background-color: oldlace; height: 50%;">
+            <h1 style="text-align: center;">내일의 사투리</h1> <br /><br />
+            <p class="dialect_sent">경상도 방언으로 그저께는 아레이다.</p>
+            <p class="dialect_sent">경상도 방언으로 부추는 정구지이다.</p>
+            <p class="dialect_sent">경상도 방언으로 부침개는 찌짐이다.</p>
+            <p class="dialect_sent">경상도 방언으로 말랐다는 애볐다이다.</p>
+            <p class="dialect_sent">경상도 방언으로 걔는 가이다.</p>
         </div>
     </div>
 </div>
