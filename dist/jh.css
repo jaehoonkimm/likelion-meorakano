@@ -45,7 +45,7 @@ body {
 .topBar {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    right: 0;
     margin: 0;
     padding: 0;
     background-color: palevioletred;
@@ -62,6 +62,7 @@ header {
 .nav-menu {
     padding: 15px;
     cursor: pointer;
+    
 }
 
 .nav-menu a {
@@ -71,7 +72,7 @@ header {
 }
 
 .nav-menu:nth-child(1) {
-    background-color: plum;
+    background-color: mediumslateblue;
 }
 
 .nav-menu:hover {
@@ -106,4 +107,13 @@ header {
 	border: 16px solid pink;
 	background-color: white;
 	overflow: auto;	
+}
+
+.main_board{
+    padding: 2%;
+}
+
+.dialect_sent {
+    font-weight: bold; 
+    text-align: center;
 }
