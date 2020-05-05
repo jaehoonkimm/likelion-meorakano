@@ -41,18 +41,24 @@ body {
     padding-right: 1%;
 
 }
-
-.topBar {
+.topBar_left {
+    list-style-type: none; 
+    display: flex; 
+    flex-direction: row; 
+    top:0;right: 0;margin: 0;padding: 0;
+}
+.topBar_right {
     display: flex;
     flex-direction: row;
+    top:0;
     right: 0;
     margin: 0;
     padding: 0;
     background-color: palevioletred;
     list-style-type: none;
+    font-weight: bold;
     justify-content: flex-end;
     position: absolute;
-    top:0;
 }
 
 header {
@@ -71,9 +77,9 @@ header {
     color: white;
 }
 
-.nav-menu:nth-child(1) {
+/* .nav-menu:nth-child(1) {
     background-color: mediumslateblue;
-}
+} */
 
 .nav-menu:hover {
     background-color: brown;
