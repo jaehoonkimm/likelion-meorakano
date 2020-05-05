@@ -21,8 +21,10 @@
     </div>
     <div class="bottom">
         <div class="left"></div>
+        
         <div class="middle">
             <div class="subTitle">
+               
                 <div class="logo2">Meorakano</div>
                 
                 <form action="searchBar">
@@ -34,10 +36,40 @@
                     </fieldset>    
                 </form>
 
-                <div class="clock">clock</div>
+                <div class="clock">
+                    <script type="text/javascript">
+                        function showClock()
+                        {
+                            var currentDate=new Date();
+                            var divClock=document.getElementById("divClock");
+                            var apm=currentDate.getHours();
+                            if(apm<12)
+                            {
+                                apm="오전 ";
+                            }
+                            else
+                            {
+                                apm="오후 ";
+                            }
+                            
+                            var msg = apm +(currentDate.getHours()-12)+"시 ";
+                            msg += currentDate.getMinutes() + "분 ";
+                            msg += currentDate.getSeconds() + "초";
+                            
+                            divClock.innerText=msg;
+                            
+                            setTimeout(showClock,1000);
+                        }
+                    </script>
+                    </head>
+                    <body onload="showClock()">
+                        <div id="divClock" class="clock"></div>
+                </div>
             </div>
+
             <div class="content"></div>
         </div>
+
         <div class="right"></div>
     </div>    
 </body>

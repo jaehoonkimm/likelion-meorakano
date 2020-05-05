@@ -1,16 +1,29 @@
 html{
+    background-color: palevioletred;
     height: 100%;
     width: 100%;
 }
 
 body {
+    background-color: palevioletred;
     width: 100%;
     height: 100%;
     margin: 0; /*Margin 0으로 바깥 여백 제거, NavBar 밀착*/
 }
 
+#objCont{
+    background-color: skyblue;
+    padding-top: 50px;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
 #objBox{
-    background-color: darkseagreen;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    width: 70%;
+    margin: auto;
 }
 
 #background {
@@ -21,21 +34,24 @@ body {
 #main_body {
     display: flex;
     margin: 0 auto;
-    width: 70%;
+    width: 66%;
     height: 100%;
-    background-color: green;
+    background-color: thistle;
+    padding-left: 1%;
+    padding-right: 1%;
+
 }
 
 .topBar {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 0;
-    background-color: darkslategrey;
+    background-color: palevioletred;
     list-style-type: none;
     justify-content: flex-end;
-    position: fixed;
+    position: absolute;
     top:0;
 }
 
@@ -55,9 +71,39 @@ header {
 }
 
 .nav-menu:nth-child(1) {
-    background-color: lightseagreen;
+    background-color: plum;
 }
 
 .nav-menu:hover {
-    background-color: grey;
+    background-color: brown;
+}
+
+/* Map 모달 */
+.map_contents {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.8); */
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.map_contents:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.map_contents > div {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	width: 25%;
+	height: auto;
+	padding: 16px;
+	border: 16px solid pink;
+	background-color: white;
+	overflow: auto;	
 }

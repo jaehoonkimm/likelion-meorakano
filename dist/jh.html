@@ -6,11 +6,15 @@
     <title>Meorakano_JH Page</title>
 
 </head>
-<body>
-    <div>
+
+<body onload="printClock()">
+    <div style="display: flex; flex-direction: row;">
+        <ul style="list-style-type: none;">
+            <li><a href="./index.html" style="color: white;">뒤로가기</a></li>
+        </ul>
         <nav>
             <ul class="topBar">
-                <li class="nav-menu" style="font-weight:bold; width: 10%; text-align: center;"> <a href="">머라카노</a></li>
+                <li class="nav-menu" style="font-weight:bold; height: 100%; width: 10%; text-align: center;"> <a href="">머라카노</a></li>
                 <li class="nav-menu"> <a href="">Shop</a></li>
                 <li class="nav-menu"> <a href="">Community</a></li>
                 <li class="nav-menu"> <a href="">그냥</a></li>
@@ -18,14 +22,80 @@
             </ul>
         </nav> 
     </div>
-<div id="objBox" style="height: 20%; width: 100%;">
-    123
-</div>
-<div id="background" style="height: 100%; width: 100%">
-    <div id="main_body">
-        Main Body 내용들
+    <div id="objCont">
+        <div id="objBox">
+            <div style="width: 20%; background-color: skyblue;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png" width="100%" height="100%" style="text-align: center;">
+            </div>
+            <div style="width:60%; background-color: skyblue;">
+                <input type="text" style="text-align: center; width: 100%; height: 50px;" placeholder="검색어를 입력하세용"/>
+            </div>
+            <div style="width:20%; height:50px; line-height:60px; color:white;font-size:30px; text-align:center;" id="clock">
+            </div>
+        </div>
     </div>
-    
+
+<div id="background" style="height: 100%; width: 100%">
+    <div id="main_body" style="display: flex; flex-direction: column;">
+        <div style="margin-top: 1.5%; background-color:oldlace; height: 50%;">
+        </div>
+        <div style="margin-bottom:1.5%; margin-top: 1.7%; background-color: oldlace; height: 50%;">
+        </div>
+    </div>
 </div>
+<div id="footer" style="color: white; height: 15px;">
+    <center>Designed by Jaehoon Kim</center>
+</div>
+
+<div style="position: fixed; top: 53%; left: 6%;">
+    <a href="#map"><img src="map_icon.png" width="5%"></a>
+</div>
+<div class="map_contents" id="map">
+    <div style="text-align: right; background-color: rgb(242, 241,241);">
+        <a href="#close" style="color: palevioletred; text-decoration: none; font-weight: bold; font-size: 30px;">X</a>
+        <img style="max-width: 100%; height: auto;" src="map.png" height="100%" width="100%">
+    </div>
+</div>
+
+<div style="position: fixed; top: 60%; left: 90%;">
+    <a href="#footer"><img src="bottom_Icon.png" width="50%"></a>
+</div>
+<div style="position: fixed; top: 50%; left: 90%;">
+    <a href="#"><img src="top_icon.png" width="50%"></a>
+</div>
+
+<script>
+    function printClock() {
+        var clock = document.getElementById("clock");            // 출력할 장소 선택
+        var currentDate = new Date();                                     // 현재시간
+        var calendar = currentDate.getFullYear() + "-" + (currentDate.getMonth()+1) + "-" + currentDate.getDate() // 현재 날짜
+        var amPm = 'AM'; // 초기값 AM
+        var currentHours = addZeros(currentDate.getHours(),2); 
+        var currentMinute = addZeros(currentDate.getMinutes() ,2);
+        var currentSeconds =  addZeros(currentDate.getSeconds(),2);
+        if(currentHours >= 12){ // 시간이 12보다 클 때 PM으로 세팅, 12를 빼줌
+            amPm = 'PM';
+            currentHours = addZeros(currentHours - 12,2);
+        }
+        if(currentSeconds >= 50){// 50초 이상일 때 색을 변환해 준다.
+           currentSeconds = '<span style="color:#de1951;">'+currentSeconds+'</span>'
+        }
+        clock.innerHTML = currentHours+":"+currentMinute+":"+currentSeconds +" <span style='font-size:10px;'>"+ amPm+"</span>"; //날짜를 출력해 줌
+        
+        setTimeout("printClock()",1000);         // 1초마다 printClock() 함수 호출
+    }
+    function addZeros(num, digit) { // 자릿수 맞춰주기
+          var zero = '';
+          num = num.toString();
+          if (num.length < digit) {
+            for (i = 0; i < digit - num.length; i++) {
+              zero += '0';
+            }
+          }
+          return zero + num;
+    }
+</script>
 </body>
 </html>
+
+
