@@ -8,11 +8,15 @@
 </head>
 <body>
     <nav>
+        <div class="nav-logo">
+            <img src="머라카노_로고.jpg" width="120px" height="40px" style="border-radius: 50px;" >
+        </div>
         <ul class= "nav-container">
+
             <li class = "nav-item"> <a href=""> 만든이</a></li>
             <li class = "nav-item"> <a href=""> 소개</a></li>
-            <li class = "nav-item"><button id="myBtn" class="myBtn" style="color: white;">사투리지도</button> </li>
-            <li class = "nav-item"> <a href=""> 베스트게시물</a></li>
+            <li class = "nav-item"><button id="myBtn" class="myBtn" style="color: white; ">사투리지도</button> </li>
+            <li class = "nav-item"> <a href=""> 로그인  </a></li>
         </ul>
 
         <div class = "floating-scroll"> 
@@ -63,7 +67,7 @@
 
     <div class ="main_contents">
         <div class = "content1">
-            <p style="font-size: 60px; text-align: center; font-family: fantasy;"> Today's saturi </p>
+            <p style="font-size: 60px; text-align: center;font-family: fantasy; "> Today's saturi </p>
             <div class="dic_titile"> 
                 <p style="padding: 30px 0px 0px 40px; font-size: 30px;">머라카노 <img src="듣기이미지.jpg" width="30px" height="30px"></p>
             </div>
@@ -75,11 +79,14 @@
                 </ul>
             </div>
             <div class="dic_funtion">
-                <div class="dic_like">
+                <div class="dic_like_heart">
                     <button style="outline: none; border: 0px; background-color: white;"><img src="좋아요.png" width="30px" height="30px"><p> 좋아요</p></button> 
                 </div>
-                <div class ="dic_heart">
+                <div class ="dic_like_heart">
                     <button style="outline: none; border: 0px; background-color: white;"><img src="하트.jpg" width="30px" height="30px"><p>찜하기</p></button> 
+                </div>
+                <div class ="dic_like_heart">
+                    <button style="outline: none; border: 0px; background-color: white;"><img src="사람_상반신.png" width="30px" height="30px"><p>다른사람</p></button> 
                 </div>
             </div>
 
@@ -87,15 +94,33 @@
         <div class = "content2">
             <p style="font-size: 60px; text-align: center; font-family: fantasy;"> Best saturi </p>
             <div class="cotent2_boxes">
-                <div class="content2_box1">좋아요 순</div>
-                <div class="content2_box2">찜하기 순</div>
+                <div class="content2_box1">좋아요 순 <img src="좋아요.png" width="30px" height="30px" style="margin-left: 10px; margin-bottom: 15px;">
+                    <div class="contetnt2_box1_items" style="text-align: left; line-height: 300%;">
+                        <ul style="cursor: pointer;">
+                            <li><a href=""></a> 가가가가가가?</li>
+                            <li><a href=""></a> 발까 이래이래이래 문떄라</li>
+                            <li><a href=""></a> 쌔가빠지게</li>
+                            <li><a href=""></a> 아이다</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content2_box2">찜하기 순 <img src="하트.jpg" width="30px" height="30px" style="margin-left: 5px; margin-bottom: 10px;">
+                    <div class="contetnt2_box2_items" style="text-align: left; line-height: 300%;">
+                        <ul style="cursor: pointer;">
+                            <li><a href=""></a> 안녕하우까?</li>
+                            <li><a href=""></a> 강생이</li>
+                            <li><a href=""></a> 고냉이</li>
+                            <li><a href=""></a> 머라카노</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class = "content3">
             <table class="table table-bordered">
                 <thead>
-                    <caption class="write_page"> Upload saturi </caption>
+                    <caption class="write_page "> Upload saturi </caption>
                 </thead>
                 <tbody>
                     <form action="write_ok.jsp" method="post" encType="multiplart/form-data">

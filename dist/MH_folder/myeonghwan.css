@@ -11,7 +11,7 @@ body{
     height: 50px;
     margin: 0;
     padding: 0;
-    background-color: darkslategray;
+    background-color: #6667E8;
     list-style-type: none;
     justify-content: flex-end;
     position: fixed;
@@ -27,6 +27,14 @@ body{
     text-decoration: none;
     color: white;
 }
+.nav-logo{
+    padding-top: 5px;
+    padding-left: 50px;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 10;
+}
+
 .top_bar{
 
     width: 100%; 
@@ -103,9 +111,11 @@ body{
     
 }
 
-.dic_like{
+.dic_like_heart{
     padding-right: 100px;
 }
+
+
 
  /* The Modal (background) */
  .modal {
@@ -147,10 +157,9 @@ body{
 
 .myBtn{
     outline: none;
-    background-color: darkslategray;
+    background-color: #6667E8;
     border: 0px;
     font-size: 16px;
-    padding-bottom: 4px;
 }
 
 .map-item a{
@@ -185,11 +194,15 @@ body{
 .content2_box1{
     width: 40%;
     height: 300px;
-    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 30px 30px 40px;
     border: 1px solid #888;
 }
 .content2_box2{
     width: 40%;
+    padding: 20px;
+    text-align: center;
     margin: 30px 30px 30px 80px;
     border: 1px solid #888;
 
