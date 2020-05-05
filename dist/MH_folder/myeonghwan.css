@@ -1,0 +1,196 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: darkslategray;
+    list-style-type: none;
+    justify-content: flex-end;
+    position: fixed;
+}
+
+.nav-item{
+    padding:15px;
+    cursor: pointer;
+}
+
+.nav-item a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.top_bar{
+
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.search_bar{
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+.input{
+    font-size: 16px;
+    width: 325px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+
+.search_button{
+    width: 50px;
+    height: 100%;
+    border: 0px;
+    background: black;
+    outline: none;
+    float: right;
+    color:  #ffffff;
+}
+
+.main_contents{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 250px 50px 250px; 
+
+}
+.content1{
+    width: 100%;
+    height: 500px;
+    padding-top: 30px;
+}
+
+.content2{
+    width: 100%;
+    height: 500px;
+    border: 3px solid gray;
+}
+
+.content3{
+    width: 100%;
+    height: 500px;
+    margin-top: 70px;
+    border: grey solid 3px ;
+}
+
+.dic_titile{
+    width: 100%;
+    height: 20%;
+    border-bottom: 3px solid gray;
+}
+
+.dic_meaning{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.dic_funtion{
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.dic_like{
+    padding-right: 100px;
+}
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px 20px 0px 30px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: row;                      
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.myBtn{
+    outline: none;
+    background-color: darkslategray;
+    border: 0px;
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.map-item a{
+    text-align: center;
+    text-decoration: none;
+    line-height: 300%;
+}
+.map-item{
+    list-style: none;
+}
+
+.floating-scroll{
+    position: fixed;
+    width: 128px;
+    right: 50px;
+    margin-top: 270px;
+}
+
+.write_page{
+    color: black;
+    text-align: center;
+    font-size: 60px; 
+    font-family: fantasy;
+    padding-bottom: 100px;
+}
+
+.cotent2_boxes{
+    display: flex;
+    flex-direction: row;
+}
+
+.content2_box1{
+    width: 40%;
+    height: 300px;
+    margin: 30px;
+    border: 1px solid #888;
+}
+.content2_box2{
+    width: 40%;
+    margin: 30px 30px 30px 80px;
+    border: 1px solid #888;
+
+}
