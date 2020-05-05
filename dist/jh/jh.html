@@ -8,13 +8,13 @@
 </head>
 
 <body onload="printClock()">
-    <div style="display: flex; flex-direction: row;">
-        <ul style="list-style-type: none; display: flex; flex-direction: row; margin-top: 0;">
-            <li class="nav-menu"> <a href="index.html">뒤로가기</a></li>
+    <div style="display: flex; flex-direction: row; height: 5%;">
+        <ul class="topBar_left">
+            <li class="nav-menu" style="background-color:mediumpurple;"> <a href="index.html">뒤로가기</a></li>
             <li class="nav-menu" style="font-weight: bold;"> <a href="jh.html">머라카노</a></li>
         </ul>
         <nav>
-            <ul class="topBar">
+            <ul class="topBar_right">
                 <li class="nav-menu"> <a href="">서울사투리</a></li>
                 <li class="nav-menu"> <a href="">경기사투리</a></li>
                 <li class="nav-menu"> <a href="">강원도사투리</a></li>
@@ -31,8 +31,8 @@
     </div>
     <div id="objCont">
         <div id="objBox">
-            <div style="width: 30%; background-color: skyblue; margin-left: 3%;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png" width="100%" height="100%" style="text-align: center;">
+            <div style="width: 20%; background-color: skyblue; margin-right: 0;">
+                <img src="images/logo_jh.jpeg" width="70%" height="97%%" style="float: right;">
             </div>
             <div style="width:60%; background-color: skyblue;">
                 <input type="text" style="text-align: center; width: 100%; height: 50px;" placeholder="검색어를 입력하세용"/>
@@ -67,20 +67,20 @@
 </div>
 
 <div style="position: fixed; top: 53%; left: 6%;">
-    <a href="#map"><img src="map_icon.png" width="5%"></a>
+    <a href="#map"><img src="images/map_icon.png" width="5%"></a>
 </div>
 <div class="map_contents" id="map">
     <div style="text-align: right; background-color: rgb(242, 241,241);">
         <a href="#close" style="color: palevioletred; text-decoration: none; font-weight: bold; font-size: 30px;">X</a>
-        <img style="max-width: 100%; height: auto;" src="map.png" height="100%" width="100%">
+        <img style="max-width: 100%; height: auto;" src="images/map.png" height="100%" width="100%">
     </div>
 </div>
 
 <div style="position: fixed; top: 60%; left: 90%;">
-    <a href="#footer"><img src="bottom_Icon.png" width="50%"></a>
+    <a href="#footer"><img src="images/bottom_Icon.png" width="50%"></a>
 </div>
 <div style="position: fixed; top: 50%; left: 90%;">
-    <a href="#"><img src="top_icon.png" width="50%"></a>
+    <a href="#"><img src="images/top_icon.png" width="50%"></a>
 </div>
 
 <script>
