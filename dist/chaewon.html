@@ -8,17 +8,19 @@
 </head>
 <body>
     <div class="up">
-        <div class="small_title">
-            <h1>머라카노</h1>
+        <div class="back">
+            <h2><a href="index.html">Go Back</a></h2>
         </div>
 
         <div class="menu">
-            <ul class="nav">
-                <li><a href="#">사투리 등록</a></li>
-                <li><a href="#">찜한 사투리</a></li>
-                <li><a href="#">Q & A</a></li>                    
-                <li><a href="#">쪽지</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li class="menu1"><a href="#">사투리 등록</a></li>
+                    <li class="menu1"><a href="#">찜한 사투리</a></li>
+                    <li class="menu1"><a href="#">Q & A</a></li>                    
+                    <li class="menu1"><a href="#">쪽지함</a></li>
+                </ul>
+            </nav>
         </div>    
     </div>
     
@@ -29,23 +31,22 @@
         <div class="middle">
             <div class="main">
                 <div class="big_title">
-                    <img src="likelion-meorakano/dist/cw_images/title.jpg">
+                    <h1><a href="chaewon.html">MEORAKANO</a></h1>
                 </div>
 
                 <div class="search">
-                    <form action="search">
-                        <fieldset>
-                            <input type="search" placeholder="뭐가 궁금하노">
-                            <button type="submit">마!
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </fieldset>    
-                    </form>
+                    <input type="search" placeholder="What do you want :)">
+                    <button type="submit">
+                        
+                    </button> 
                 </div>
 
-                <div class="clock">시계는똑딱똑딱</div>
+                <div class="clock">
+                    <h3 id="clock">00:00</h3>
+                </div>
             </div>
-            <div class="content">
+            
+            <div class="contents">
 
             </div>
         </div>
@@ -53,5 +54,6 @@
         <div class="blank2">
         </div>
     </div>    
+    <script src = "clock.js"></script>
 </body>
 </html>

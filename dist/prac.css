@@ -1,0 +1,68 @@
+/*크롬*/
+input:-ms-input-placeholder {
+    color: #a8a8a8;
+}
+/*익스플로러*/
+input:-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+/*파이어폭스*/
+input:-moz-input-placeholder {
+    color: #a8a8a8;
+}
+
+div {
+    height: 40px;
+    width: 400px;
+    border: 1px solid #1b5ac2;
+    background: #ffffff;
+}
+
+input {
+    font-size: 16px;
+    width: 325px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+
+button {
+    width: 50px;
+    height: 100%;
+    border: 0px;
+    background: #1b5ac2;
+    outline: none;
+    float: right;
+    color: #ffffff;
+}
+
+
+
+
+
+.search button {  
+    z-index: 1;  /*숫자가 높을수록 위로 올라옴*/
+    width: 50px;  
+    border: 0 none;  
+    background: #cac8c2;  
+    cursor: pointer;  
+    border-radius: 10px;  
+}
+
+.search input, button {  /*검색 버튼*/
+    position: relative;  
+    padding: 0;  
+    display: inline-block;  
+    /* float: left;  */
+}
+
+.search fieldset {   /*검색창*/
+    position: relative;
+    display: inline-block;  /*block이 inline으로 늘어섬*/
+    padding: 60px 0 0 30px;
+    background: rgba(255, 255, 255, 0.781);
+    border: none; 
+    border-radius: 5px;
+    font-family: 'Nanum Myeongjo'; 
+}

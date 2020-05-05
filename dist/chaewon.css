@@ -1,44 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+a:hover { 
+	color: #c10000;
+}
+
 /***********************body************************/
 html, body{
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Nanum Myeongjo';
 }
 
 /********************title, nav*********************/
 .up {
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: rgb(241, 235, 235);
     width: 100%;
     height: 100px;
 }
 
-.small_title{
+.back{
     text-align: left;
-    margin-left: 20%;
-    color: white;
-    width: 50%;
+    margin-left: 5%;
+    color: #2d2d2d;
+    width: 55%;
+    font-family: 'Dancing Script';
+}
+
+.back a{
+    color: #2d2d2d;
+    text-decoration: none; /*밑줄 없애기*/
+}
+
+.back a:hover { 
+	color: #c10000;
 }
 
 .menu{
-    width: 50%;
+    width: 45%;
 }
 
-.nav li{
+nav {
+    text-align: center;
+    margin: 10px auto;
+    position: static;
+}
+
+nav ul {
+	margin-bottom: 15px;
+}
+
+nav ul li{
     float: left;
-    text-align: left;    /*왼쪽 정렬*/
-    margin-top: 30px;
+    /* text-align: left;    왼쪽 정렬 */
+    margin-top: 20px;
     margin-left: -10px;
-    margin-right: 30px;
-    color: white;
+    /* margin-right: 30px;
+    margin-bottom: 10px; */
+    color: #2d2d2d;
     list-style: none;
+    text-align: center;
+    width: 20%;
+    position: relative;
+    left: -10%;
 }
 
-.nav li a{
-    color: white;
+nav li a{
+    color: #2d2d2d;
     text-decoration: none; /*밑줄 없애기*/
+    display: block;
+    font-size: 0.9em;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.menu1 a {
+	background: url(heart.png) no-repeat left center;
 }
 
 .down{ 
@@ -52,13 +93,13 @@ html, body{
 .blank1{
     height: 100%;
     width: 20%;
-    background-color: black;
+    background-color: white;
 }
 
 .blank2{
     height: 100%;
     width: 20%;
-    background-color: black;
+    background-color: white;
 }
 
 .middle{
@@ -67,7 +108,7 @@ html, body{
     width: 1000px;
 }
 
-.content{
+.contents{
     width: 1000px;
     height: 90%;
     background-color: rgb(241, 235, 235);
@@ -82,40 +123,59 @@ html, body{
     justify-content: space-around;
 }
 
+
+/***********************big_title************************/
 .big_title {
     width: 20%;
     height: 100%;
 }
 
-.big_title img {
-    width: 250px;
-    height: 50px;
+.big_title h1 {
+    text-align: left;
+    color: #2d2d2d;
+    font-family: 'Dancing Script';
     margin-top: 50px;
-    margin-left: -30px;
+    margin-left: -10px;
+    font-size: 45px;
 }
 
-.search fieldset {   /*검색창*/
-    position: relative;
-    display: inline-block;  /*block이 inline으로 늘어섬*/
-    padding: 0 0 0 40px;
-    background: rgba(255, 255, 255, 0.781);
-    border: none; 
-    border-radius: 5px; 
+.big_title a{
+    color: #3f3d3d;
+    text-decoration: none; /*밑줄 없애기*/
 }
 
-.search input, button {  /*검색 버튼*/
-    position: relative; 
-    width: 200px;  /*검색 버튼 크기*/
-    height: 35px;  
-    padding: 0;  
-    display: inline-block;  
-    /* float: left;  */
+
+/***********************search************************/
+/*크롬*/
+input:-ms-input-placeholder {
+    color: #a8a8a8;
+}
+/*익스플로러*/
+input:-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+/*파이어폭스*/
+input:-moz-input-placeholder {
+    color: #a8a8a8;
 }
 
-.search input {   
-    color: rgb(92, 47, 47);  
-    z-index: 2;  
-    /* border: 0 none;    마우스 입력창 border 없앰 */
+.search {
+    height: 40px;
+    width: 350px;
+    border: 1px double #a8a8a8;
+    background: #ffffff;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.search input {
+    font-size: 16px;
+    width: 300px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+    color: rgb(109, 36, 36);
 }
 
 .search input:focus {  
@@ -123,10 +183,23 @@ html, body{
 }
 
 .search button {  
-    z-index: 1;  /*숫자가 높을수록 위로 올라옴*/
-    width: 50px;  
-    border: 0 none;  
-    background: #cac8c2;  
-    cursor: pointer;  
-    border-radius: 10px;  
+    width: 50px;
+    height: 100%;
+    margin-top: 4px;
+    margin-right: -7px;
+    border: 0px;
+    background: url( "search.png" ) no-repeat;
+    outline: none;
+    float: right;
+    color: #2d2d2d; 
+    cursor: pointer; 
+    border-radius: 10px 0 10px 0;
+}
+
+
+/***********************clock************************/
+.clock {
+    margin-top: 60px;
+    margin-right: -40px;
+    color: rgb(97, 99, 98);
 }
