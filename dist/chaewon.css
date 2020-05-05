@@ -85,7 +85,7 @@ nav li a{
 .down{ 
     text-align: center;
     width: 100%;
-    height: 1000px;
+    height: 1500px;
     display: flex;
     flex-direction: row;
 }
@@ -106,6 +106,12 @@ nav li a{
     display: flex;
     flex-direction: column;
     width: 1000px;
+}
+
+.middle {
+	background: url(footer.png) no-repeat bottom;
+	padding-bottom: 150px;
+	border-bottom: 10px double #d5d5d5;
 }
 
 .contents{
@@ -134,7 +140,7 @@ nav li a{
     text-align: left;
     color: #2d2d2d;
     font-family: 'Dancing Script';
-    margin-top: 50px;
+    margin-top: 59px;
     margin-left: -10px;
     font-size: 45px;
 }
@@ -164,7 +170,7 @@ input:-moz-input-placeholder {
     width: 350px;
     border: 1px double #a8a8a8;
     background: #ffffff;
-    margin-top: 60px;
+    margin-top: 25px;
     margin-left: 50px;
 }
 
@@ -199,7 +205,63 @@ input:-moz-input-placeholder {
 
 /***********************clock************************/
 .clock {
-    margin-top: 60px;
+    margin-top: 25px;
     margin-right: -40px;
     color: rgb(97, 99, 98);
+}
+
+
+
+/***********************contents************************/
+#news h2 {
+	margin: 0 5px 15px 0;
+	background: url(flower.png) repeat-x bottom;
+	padding-bottom: 10px;
+	font-family: 'Dancing Script';
+	font-size: 1.2em;
+	padding-left: 15px;
+}
+
+#news article h3 {
+	font-size: 0.8em;
+	background: url(icon.png) no-repeat left center;
+	padding-left: 20px;
+	margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+#news article p {
+	border: 1px dashed #a5a5a5;
+	line-height: 1.4em; /* �� ���� */
+	font-size: 0.8em;
+	margin: 15px;
+	padding: 12px;
+	border-radius: 0 30px 0 30px;
+	line-height: 1.5em;
+}
+
+#p1 {
+	background-color: #fff4f4;
+}
+
+#p2 {
+	background-color: #ffeaea;
+}
+
+
+/***********************footer************************/
+footer div {
+	margin: 20px;
+	text-align: center;
+}
+
+footer div p {
+	font-size:0.8em;
+	line-height: 1.6em;
+}
+
+footer small {
+	font-size: 0.7em;
+	color: #800040;
+	line-height: 2.0em;
 }
