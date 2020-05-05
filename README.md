@@ -11,6 +11,6 @@ Take a look!
 >>> AWS S3 + Github actions with workflow
 
 ## Reference
-> Git branch update : https://c10106.tistory.com/1498
-
-> Modal pop-up : https://new93helloworld.tistory.com/135
+>MH
+>> Git branch update : https://c10106.tistory.com/1498
+>> Modal pop-up : https://new93helloworld.tistory.com/135
