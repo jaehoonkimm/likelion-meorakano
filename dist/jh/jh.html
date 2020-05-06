@@ -35,10 +35,15 @@
     <div id="objCont">
         <div id="objBox">
             <div style="width: 20%; background-color: skyblue; margin-right: 0;">
-                <img src="images/logo_jh.jpeg" width="70%" height="97%%" style="float: right;">
+                <img src="images/logo_jh.jpeg" width="70%" height="100%" style="float: right;">
             </div>
-            <div style="width:60%; background-color: skyblue;">
-                <input type="text" style="text-align: center; width: 100%; height: 50px;" placeholder="검색어를 입력하세용"/>
+            <div style="width:60%; height: 100%; background-color: skyblue;">
+                <form method=get action="http://www.google.co.kr/search" target="_blank" style="height: 90%;" >   
+                    <table bgcolor="#FFFFFF">     
+                                <input type="text" name=q maxlength=100 value="" style="text-align: center; width: 100%; height: 100%; font-size: medium;" placeholder="검색어를 입력하고 엔터를 누르세요" />      
+                    </table> 
+                </form>
+
             </div>
             <div style="width:20%; height:50px; line-height:60px; color:white;font-size:30px; text-align:center;" id="clock">
             </div>
