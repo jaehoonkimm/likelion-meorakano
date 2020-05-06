@@ -46,6 +46,8 @@ body {
     display: flex; 
     flex-direction: row; 
     top:0;right: 0;margin: 0;padding: 0;
+    justify-content: flex-start;
+    position: relative;
 }
 .topBar_right {
     display: flex;

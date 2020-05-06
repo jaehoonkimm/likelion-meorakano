@@ -8,34 +8,42 @@
 </head>
 
 <body onload="printClock()">
-    <div style="display: flex; flex-direction: row; height: 5%;">
-        <ul class="topBar_left">
-            <li class="nav-menu" style="background-color:mediumpurple;"> <a href="index.html">뒤로가기</a></li>
-            <li class="nav-menu" style="font-weight: bold;"> <a href="jh.html">머라카노</a></li>
-        </ul>
+    <div style="display: flex; flex-direction: row;">
+        <nav>
+            <ul class="topBar_left">
+                <li class="nav-menu" style="background-color:mediumpurple;"> <a href="../index.html">뒤로가기</a></li>
+                <li class="nav-menu" style="font-weight: bold;"> <a href="jh.html">머라카노</a></li>
+            </ul>
+        </nav>
+
         <nav>
             <ul class="topBar_right">
-                <li class="nav-menu"> <a href="">서울사투리</a></li>
-                <li class="nav-menu"> <a href="">경기사투리</a></li>
-                <li class="nav-menu"> <a href="">강원도사투리</a></li>
-                <li class="nav-menu"> <a href="">대전사투리</a></li>
-                <li class="nav-menu"> <a href="">부산사투리</a></li>
-                <li class="nav-menu"> <a href="">대구사투리</a></li>
-                <li class="nav-menu"> <a href="">울산사투리</a></li>
-                <li class="nav-menu"> <a href="">충청도사투리</a></li>
-                <li class="nav-menu"> <a href="">전라도사투리</a></li>
-                <li class="nav-menu"> <a href="">경상도사투리</a></li>
-                <li class="nav-menu"> <a href="">제주도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.seoul.go.kr/main/index.jsp" target="_blank">서울사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.gg.go.kr" target="_blank">경기사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.provin.gangwon.kr/" target="_blank">강원도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.daejeon.go.kr" target="_blank">대전사투리</a></li>
+                <li class="nav-menu"> <a href="http://www.busan.go.kr/open/index.jsp" target="_blank">부산사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.daegu.go.kr" target="_blank">대구사투리</a></li>
+                <li class="nav-menu"> <a href="http://www.ulsan.go.kr/rep/index" target="_blank">울산사투리</a></li>
+                <li class="nav-menu"> <a href="http://www.chungnam.go.kr/main.do" target="_blank">충청도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.jeonnam.go.kr" target="_blank">전라도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.gb.go.kr" target="_blank">경상도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.jeju.go.kr/index.htm" target="_blank">제주도사투리</a></li>
             </ul>
         </nav> 
     </div>
     <div id="objCont">
         <div id="objBox">
             <div style="width: 20%; background-color: skyblue; margin-right: 0;">
-                <img src="images/logo_jh.jpeg" width="70%" height="97%%" style="float: right;">
+                <img src="images/logo_jh.jpeg" width="70%" height="100%" style="float: right;">
             </div>
-            <div style="width:60%; background-color: skyblue;">
-                <input type="text" style="text-align: center; width: 100%; height: 50px;" placeholder="검색어를 입력하세용"/>
+            <div style="width:60%; height: 100%; background-color: skyblue;">
+                <form method=get action="http://www.google.co.kr/search" target="_blank" style="height: 90%;" >   
+                    <table bgcolor="#FFFFFF">     
+                                <input type="text" name=q maxlength=100 value="" style="text-align: center; width: 100%; height: 100%; font-size: medium;" placeholder="검색어를 입력하고 엔터를 누르세요" />      
+                    </table> 
+                </form>
+
             </div>
             <div style="width:20%; height:50px; line-height:60px; color:white;font-size:30px; text-align:center;" id="clock">
             </div>
