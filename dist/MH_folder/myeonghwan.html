@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myeonghwan.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="머라카노_로고.jpg" width="120px" height="40px" style="border-radius: 50px;" >
+        </div>
+        <ul class= "nav-container">
+
+            <li class = "nav-item"> <a href=""> 만든이</a></li>
+            <li class = "nav-item"> <a href=""> 소개</a></li>
+            <li class = "nav-item"><button id="myBtn" class="myBtn" style="color: white; ">사투리지도</button> </li>
+            <li class = "nav-item"> <a href=""> 로그인  </a></li>
+        </ul>
+
+        <div class = "floating-scroll"> 
+            <button class="scroll_func" id="bottom" style="margin-left: 50px; outline: none; border: 0px; background-color: white;"><img src="위로.png" width="50%" height="50%"></button> <br><br><br><br><br><br><br> 
+            <button class="scroll_func" id="top" style="margin-left: 50px; outline: none; border: 0px; background-color: white;"><img src="아래로.png" width="50%" height="50%"></button>
+        </div>
+    </nav>
+
+
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>                                                               
+          <img src="사투리지도.png" height="100%" style="padding-left: 150px;">
+          <div style="padding-left: 50px; padding-top: 20px;">
+              <ul>
+                  <li class ="map-item"><a href="" style="color:#FFCE00 ;">1.평안도</a></li>
+                  <li class ="map-item"><a href="" style="color:#C6C600">2.함경도</a></li>
+                  <li class ="map-item"><a href="" style="color:#C6C6FF;">3.경기도</a></li>
+                  <li class ="map-item"><a href="" style="color: #FF84FF;">4.전라도</a></li>
+                  <li class ="map-item"><a href="" style="color: #FFC6C6;">5.경상도</a></li>
+                  <li class ="map-item"><a href="" style="color: #EF0000;">6.제주도</a></li>
+              </ul>
+          </div>
+        </div>
+   
+      </div>
+  
+    <div style="display: flex; flex-direction: column; width: 100%;">
+        <div style="padding: 100px 0px 0px 250px; ">
+            <div class="top_bar" >
+                <div >
+                    <img src="머라카노_로고.jpg" width="250" height="100">
+                </div>
+                <div style="padding: 40px 60px 40px 60px;">
+                    <div class = "search_bar"style="width: 400px;height: 40px;" >
+                        <input class ="input" type="text" placeholder="검색어 입력" style="padding-bottom: 0px;">
+                        <button class="search_button">검색</button>
+                    </div>
+                </div>
+                <div style= "padding-top: 20px;">
+                    <h1 class = "h1-clock" style="text-align: center;"></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class ="main_contents">
+        <div class = "content1">
+            <p style="font-size: 60px; text-align: center;font-family: fantasy; "> Today's saturi </p>
+            <div class="dic_titile"> 
+                <p style="padding: 30px 0px 0px 40px; font-size: 30px;">머라카노 <img src="듣기이미지.jpg" width="30px" height="30px"></p>
+            </div>
+
+            <div class="dic_meaning">
+                <ul>
+                    <li>[무슨말을 하는거니?]의 경상도 사투리</li>
+                    <li>상대방이 자기와는 다른 생각의 말을 했을때 쓰는 반론.</li>
+                </ul>
+            </div>
+            <div class="dic_funtion">
+                <div class="dic_like_heart">
+                    <button style="outline: none; border: 0px; background-color: white;"><img src="좋아요.png" width="30px" height="30px"><p> 좋아요</p></button> 
+                </div>
+                <div class ="dic_like_heart">
+                    <button style="outline: none; border: 0px; background-color: white;"><img src="하트.jpg" width="30px" height="30px"><p>찜하기</p></button> 
+                </div>
+                <div class ="dic_like_heart">
+                    <button style="outline: none; border: 0px; background-color: white;"><img src="사람_상반신.png" width="30px" height="30px"><p>다른사람</p></button> 
+                </div>
+            </div>
+
+        </div>
+        <div class = "content2">
+            <p style="font-size: 60px; text-align: center; font-family: fantasy;"> Best saturi </p>
+            <div class="cotent2_boxes">
+                <div class="content2_box1">좋아요 순 <img src="좋아요.png" width="30px" height="30px" style="margin-left: 10px; margin-bottom: 15px;">
+                    <div class="contetnt2_box1_items" style="text-align: left; line-height: 300%;">
+                        <ul style="cursor: pointer;">
+                            <li><a href=""></a> 가가가가가가?</li>
+                            <li><a href=""></a> 발까 이래이래이래 문떄라</li>
+                            <li><a href=""></a> 쌔가빠지게</li>
+                            <li><a href=""></a> 아이다</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content2_box2">찜하기 순 <img src="하트.jpg" width="30px" height="30px" style="margin-left: 5px; margin-bottom: 10px;">
+                    <div class="contetnt2_box2_items" style="text-align: left; line-height: 300%;">
+                        <ul style="cursor: pointer;">
+                            <li><a href=""></a> 안녕하우까?</li>
+                            <li><a href=""></a> 강생이</li>
+                            <li><a href=""></a> 고냉이</li>
+                            <li><a href=""></a> 머라카노</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "content3">
+            <table class="table table-bordered">
+                <thead>
+                    <caption class="write_page "> Upload saturi </caption>
+                </thead>
+                <tbody>
+                    <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+                        <tr>
+                            <th>제목: </th>
+                            <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
+                        </tr>
+                        <tr>
+                            <th>내용: </th>
+                            <td><textarea cols="10" placeholder="내용을 입력하세요. " name="content" class="form-control"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th>첨부파일: </th>
+                            <td><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호: </th>
+                            <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="등록" onclick="sendData()" class="pull-right"/>
+                                <input type="button" value="reset" class="pull-left"/>
+                                <input type="button" value="글 목록으로... " class="pull-right" onclick="javascript:location.href='list.jsp'"/>
+                                <!-- <a class="btn btn-default" onclick="sendData()"> 등록 </a>
+                                <a class="btn btn-default" type="reset"> reset </a>
+                                <a class="btn btn-default" onclick="javascript:location.href='list.jsp'">글 목록으로...</a> -->
+                            </td>
+                        </tr>
+                    </form>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <!-- CDN -->
+    <script src="https://cdn.WebRTC-Experiment.com/RecordRTC.js";></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src = "myeonghwan_clock.js" ></script>
+    <script src="myeonghwan_modal.js"></script>
+    <script src="myeonghwan_scroll.js"></script>
+    <script src="myeonghwan_record.js"></script>
+    
+</body>
+</html>

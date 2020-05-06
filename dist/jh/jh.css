@@ -1,0 +1,127 @@
+html{
+    background-color: palevioletred;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: palevioletred;
+    width: 100%;
+    height: 100%;
+    margin: 0; /*Margin 0으로 바깥 여백 제거, NavBar 밀착*/
+}
+
+#objCont{
+    background-color: skyblue;
+    padding-top: 50px;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+#objBox{
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    width: 70%;
+    margin: auto;
+}
+
+#background {
+    background-color: skyblue;
+}
+
+
+#main_body {
+    display: flex;
+    margin: 0 auto;
+    width: 66%;
+    height: 100%;
+    background-color: thistle;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+.topBar_left {
+    list-style-type: none; 
+    display: flex; 
+    flex-direction: row; 
+    top:0;right: 0;margin: 0;padding: 0;
+    justify-content: flex-start;
+    position: relative;
+}
+.topBar_right {
+    display: flex;
+    flex-direction: row;
+    top:0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background-color: palevioletred;
+    list-style-type: none;
+    font-weight: bold;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+header {
+    margin-top: 80px; /* 페이지 최상단 내용이 topBar에 가려지지 않도록 margin 추가 */
+}
+
+.nav-menu {
+    padding: 15px;
+    cursor: pointer;
+    
+}
+
+.nav-menu a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* .nav-menu:nth-child(1) {
+    background-color: mediumslateblue;
+} */
+
+.nav-menu:hover {
+    background-color: brown;
+}
+
+/* Map 모달 */
+.map_contents {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.8); */
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.map_contents:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.map_contents > div {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	width: 25%;
+	height: auto;
+	padding: 16px;
+	border: 16px solid pink;
+	background-color: white;
+	overflow: auto;	
+}
+
+.main_board{
+    padding: 2%;
+}
+
+.dialect_sent {
+    font-weight: bold; 
+    text-align: center;
+}

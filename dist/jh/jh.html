@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="jh.css">
+    <title>Meorakano_JH Page</title>
+
+</head>
+
+<body onload="printClock()">
+    <div style="display: flex; flex-direction: row;">
+        <nav>
+            <ul class="topBar_left">
+                <li class="nav-menu" style="background-color:mediumpurple;"> <a href="../index.html">뒤로가기</a></li>
+                <li class="nav-menu" style="font-weight: bold;"> <a href="jh.html">머라카노</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="topBar_right">
+                <li class="nav-menu"> <a href="https://www.seoul.go.kr/main/index.jsp" target="_blank">서울사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.gg.go.kr" target="_blank">경기사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.provin.gangwon.kr/" target="_blank">강원도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.daejeon.go.kr" target="_blank">대전사투리</a></li>
+                <li class="nav-menu"> <a href="http://www.busan.go.kr/open/index.jsp" target="_blank">부산사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.daegu.go.kr" target="_blank">대구사투리</a></li>
+                <li class="nav-menu"> <a href="http://www.ulsan.go.kr/rep/index" target="_blank">울산사투리</a></li>
+                <li class="nav-menu"> <a href="http://www.chungnam.go.kr/main.do" target="_blank">충청도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.jeonnam.go.kr" target="_blank">전라도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.gb.go.kr" target="_blank">경상도사투리</a></li>
+                <li class="nav-menu"> <a href="https://www.jeju.go.kr/index.htm" target="_blank">제주도사투리</a></li>
+            </ul>
+        </nav> 
+    </div>
+    <div id="objCont">
+        <div id="objBox">
+            <div style="width: 20%; background-color: skyblue; margin-right: 0;">
+                <img src="images/logo_jh.jpeg" width="70%" height="100%" style="float: right;">
+            </div>
+            <div style="width:60%; height: 100%; background-color: skyblue;">
+                <form method=get action="http://www.google.co.kr/search" target="_blank" style="height: 90%;" >   
+                    <table bgcolor="#FFFFFF">     
+                                <input type="text" name=q maxlength=100 value="" style="text-align: center; width: 100%; height: 100%; font-size: medium;" placeholder="검색어를 입력하고 엔터를 누르세요" />      
+                    </table> 
+                </form>
+
+            </div>
+            <div style="width:20%; height:50px; line-height:60px; color:white;font-size:30px; text-align:center;" id="clock">
+            </div>
+        </div>
+    </div>
+
+<div id="background" style="height: 100%; width: 100%">
+    <div id="main_body" style="display: flex; flex-direction: column;">
+        <div class="main_board" style="margin-top: 1.5%; background-color:oldlace; height: 50%;">
+            <h1 style="text-align: center;">오늘의 사투리</h1> <br /><br />
+            <p class="dialect_sent">제주도 방언으로 고양이는 고냉이이다.</p>
+            <p class="dialect_sent">제주도 방언으로 개는 강생이이다.</p>
+            <p class="dialect_sent">제주도 방언으로 돼지는 도새기이다.</p>
+            <p class="dialect_sent">제주도 방언으로 독수리는 똥소레기이다.</p>
+            <p class="dialect_sent">제주도 방언으로 병아리는 빙애기이다.</p>
+        </div>
+        <div class="main_board" style="margin-bottom:1.5%; margin-top: 1.7%; background-color: oldlace; height: 50%;">
+            <h1 style="text-align: center;">내일의 사투리</h1> <br /><br />
+            <p class="dialect_sent">경상도 방언으로 그저께는 아레이다.</p>
+            <p class="dialect_sent">경상도 방언으로 부추는 정구지이다.</p>
+            <p class="dialect_sent">경상도 방언으로 부침개는 찌짐이다.</p>
+            <p class="dialect_sent">경상도 방언으로 말랐다는 애볐다이다.</p>
+            <p class="dialect_sent">경상도 방언으로 걔는 가이다.</p>
+        </div>
+    </div>
+</div>
+<div id="footer" style="color: white; height: 15px;">
+    <center>Designed by Jaehoon Kim</center>
+</div>
+
+<div style="position: fixed; top: 53%; left: 6%;">
+    <a href="#map"><img src="images/map_icon.png" width="5%"></a>
+</div>
+<div class="map_contents" id="map">
+    <div style="text-align: right; background-color: rgb(242, 241,241);">
+        <a href="#close" style="color: palevioletred; text-decoration: none; font-weight: bold; font-size: 30px;">X</a>
+        <img style="max-width: 100%; height: auto;" src="images/map.png" height="100%" width="100%">
+    </div>
+</div>
+
+<div style="position: fixed; top: 60%; left: 90%;">
+    <a href="#footer"><img src="images/bottom_Icon.png" width="50%"></a>
+</div>
+<div style="position: fixed; top: 50%; left: 90%;">
+    <a href="#"><img src="images/top_icon.png" width="50%"></a>
+</div>
+
+<script>
+    function printClock() {
+        var clock = document.getElementById("clock");            // 출력할 장소 선택
+        var currentDate = new Date();                                     // 현재시간
+        var calendar = currentDate.getFullYear() + "-" + (currentDate.getMonth()+1) + "-" + currentDate.getDate() // 현재 날짜
+        var amPm = 'AM'; // 초기값 AM
+        var currentHours = addZeros(currentDate.getHours(),2); 
+        var currentMinute = addZeros(currentDate.getMinutes() ,2);
+        var currentSeconds =  addZeros(currentDate.getSeconds(),2);
+        if(currentHours >= 12){ // 시간이 12보다 클 때 PM으로 세팅, 12를 빼줌
+            amPm = 'PM';
+            currentHours = addZeros(currentHours - 12,2);
+        }
+        if(currentSeconds >= 50){// 50초 이상일 때 색을 변환해 준다.
+           currentSeconds = '<span style="color:#de1951;">'+currentSeconds+'</span>'
+        }
+        clock.innerHTML = currentHours+":"+currentMinute+":"+currentSeconds +" <span style='font-size:10px;'>"+ amPm+"</span>"; //날짜를 출력해 줌
+        
+        setTimeout("printClock()",1000);         // 1초마다 printClock() 함수 호출
+    }
+    function addZeros(num, digit) { // 자릿수 맞춰주기
+          var zero = '';
+          num = num.toString();
+          if (num.length < digit) {
+            for (i = 0; i < digit - num.length; i++) {
+              zero += '0';
+            }
+          }
+          return zero + num;
+    }
+</script>
+</body>
+</html>
+
+
