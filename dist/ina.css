@@ -51,9 +51,26 @@ html, body{
 }
 
 .right{
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 480px;
 }
+
+.up{ 
+    position:fixed;
+    height: 20%;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.down{
+    position:fixed;
+    height: 20%;
+    margin-left: 50px;
+    margin-top: 170px
+}
+    
 
 .middle{
     display: flex;
@@ -78,6 +95,7 @@ html, body{
 
 .logo2{
     font-size: x-large;
+}
 
 
 
