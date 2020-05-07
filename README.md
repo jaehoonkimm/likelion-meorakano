@@ -26,3 +26,6 @@ __Take a look!__
 
 >Jaehoon Kim
 <img width="1599" alt="jh_page" src="https://user-images.githubusercontent.com/43606451/81250216-5cb4d500-905b-11ea-8543-c4cdd1de4d53.png">
+
+>Chaewon Kang
+<img width="1599" alt="jh_page" src="https://user-images.githubusercontent.com/33504288/81279524-3b231000-9092-11ea-9082-0c4a29778589.png">
