@@ -18,6 +18,8 @@ __Take a look!__
 
 > Modal pop-up : https://new93helloworld.tistory.com/135
 
+> README 스크린샷 추가 : https://hanee24.github.io/2017/12/21/how-to-upload-image-with-github-readme/
+
 ---
 
 ## Page Screenshot
