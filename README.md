@@ -29,3 +29,6 @@ __Take a look!__
 
 >Chaewon Kang
 <img width="1599" alt="jh_page" src="https://user-images.githubusercontent.com/33504288/81279524-3b231000-9092-11ea-9082-0c4a29778589.png">
+
+>Myonghwan Lee
+<img width="1599" alt="MH_page" src="https://user-images.githubusercontent.com/56781342/81285438-7c1f2280-909a-11ea-82ba-e5e265bc8365.png">
