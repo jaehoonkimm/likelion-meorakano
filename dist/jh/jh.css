@@ -2,6 +2,7 @@ html{
     background-color: palevioletred;
     height: 100%;
     width: 100%;
+    font-family: 'Play', sans-serif;
 }
 
 body {
@@ -125,3 +126,32 @@ header {
     font-weight: bold; 
     text-align: center;
 }
+
+/* Mouse click effect */
+.particles > .particle {
+    border-radius: 100%;
+    background: transparent;
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .particles > .particle.smaller {
+    width: 5px;
+    height: 5px;
+  }
+  .particles > .particle.small {
+    width: 10px;
+    height: 10px;
+  }
+  .particles > .particle.normal {
+    width: 15px;
+    height: 15px;
+  }
+  .particles > .particle.big {
+    width: 20px;
+    height: 20px;
+  }
+  .particles > .particle.bigger {
+    width: 25px;
+    height: 25px;
+  }
