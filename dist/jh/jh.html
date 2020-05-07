@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="jh.css">
+    <script type="text/javascript" src="jh.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <title>Meorakano_JH Page</title>
 
 </head>
 
 <body onload="printClock()">
-    <div style="display: flex; flex-direction: row;">
+    <div class='particles'></div>
+    <script type="text/javascript" src="jh.js"></script>
+    <div style="display: flex; flex-direction: row;" >
         <nav>
             <ul class="topBar_left">
                 <li class="nav-menu" style="background-color:mediumpurple;"> <a href="../index.html">뒤로가기</a></li>
                 <li class="nav-menu" style="font-weight: bold;"> <a href="jh.html">머라카노</a></li>
             </ul>
         </nav>
-
         <nav>
             <ul class="topBar_right">
                 <li class="nav-menu"> <a href="https://www.seoul.go.kr/main/index.jsp" target="_blank">서울사투리</a></li>
@@ -49,10 +52,10 @@
             </div>
         </div>
     </div>
-
+    
 <div id="background" style="height: 100%; width: 100%">
     <div id="main_body" style="display: flex; flex-direction: column;">
-        <div class="main_board" style="margin-top: 1.5%; background-color:oldlace; height: 50%;">
+        <div class="main_board"  style="margin-top: 1.5%; background-color:oldlace; height: 50%;">
             <h1 style="text-align: center;">오늘의 사투리</h1> <br /><br />
             <p class="dialect_sent">제주도 방언으로 고양이는 고냉이이다.</p>
             <p class="dialect_sent">제주도 방언으로 개는 강생이이다.</p>
@@ -91,37 +94,6 @@
     <a href="#"><img src="images/top_icon.png" width="50%"></a>
 </div>
 
-<script>
-    function printClock() {
-        var clock = document.getElementById("clock");            // 출력할 장소 선택
-        var currentDate = new Date();                                     // 현재시간
-        var calendar = currentDate.getFullYear() + "-" + (currentDate.getMonth()+1) + "-" + currentDate.getDate() // 현재 날짜
-        var amPm = 'AM'; // 초기값 AM
-        var currentHours = addZeros(currentDate.getHours(),2); 
-        var currentMinute = addZeros(currentDate.getMinutes() ,2);
-        var currentSeconds =  addZeros(currentDate.getSeconds(),2);
-        if(currentHours >= 12){ // 시간이 12보다 클 때 PM으로 세팅, 12를 빼줌
-            amPm = 'PM';
-            currentHours = addZeros(currentHours - 12,2);
-        }
-        if(currentSeconds >= 50){// 50초 이상일 때 색을 변환해 준다.
-           currentSeconds = '<span style="color:#de1951;">'+currentSeconds+'</span>'
-        }
-        clock.innerHTML = currentHours+":"+currentMinute+":"+currentSeconds +" <span style='font-size:10px;'>"+ amPm+"</span>"; //날짜를 출력해 줌
-        
-        setTimeout("printClock()",1000);         // 1초마다 printClock() 함수 호출
-    }
-    function addZeros(num, digit) { // 자릿수 맞춰주기
-          var zero = '';
-          num = num.toString();
-          if (num.length < digit) {
-            for (i = 0; i < digit - num.length; i++) {
-              zero += '0';
-            }
-          }
-          return zero + num;
-    }
-</script>
 </body>
 </html>
 
