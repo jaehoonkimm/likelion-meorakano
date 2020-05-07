@@ -126,7 +126,7 @@ html, body{
     font-size: x-large;
 }
 
-.footer{
+#footer{
     align-self: flex-end;
     width: 100%;
     /* height: 20px; */
