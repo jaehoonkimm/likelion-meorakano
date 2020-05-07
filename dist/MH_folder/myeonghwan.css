@@ -28,6 +28,8 @@ body{
     color: white;
 }
 .nav-logo{
+    display: flex;
+    flex-direction: row;
     padding-top: 5px;
     padding-left: 50px;
     justify-content: flex-start;
@@ -205,5 +207,15 @@ body{
     text-align: center;
     margin: 30px 30px 30px 80px;
     border: 1px solid #888;
+}
+footer div {
+    border-top: grey 1px solid;
+    margin: 50px;
+    padding: 10px;
+	text-align: center;
+}
 
+footer div p {
+	font-size:0.8em;
+	line-height: 1.6em;
 }

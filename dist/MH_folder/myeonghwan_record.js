@@ -1,61 +1,24 @@
-var audio = document.querySelector('audio'); 
-function captureMicrophone(callback) { 
-    navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia || navigator.webkitGetUserMedia; 
-    navigator.getUserMedia({audio: true}, callback, function (error) { 
-        alert('Unable to access your microphone.'); 
-         console.error(error); 
-    }); 
-} 
-
-
-function stopRecordingCallback() { 
-    var blob = recorder.getBlob(); 
-    audio.src = URL.createObjectURL(blob); 
-    audio.play(); 
-    recorder.microphone.stop(); 
-    createAudioElement(window.URL.createObjectURL(blob)); 
-} 
-
-
-var recorder; // globally accessible 
-document.getElementById('btn-start-recording').onclick = function () { 
-    this.disabled = true; 
-    captureMicrophone(function (microphone) { 
-        audio.src = URL.createObjectURL(microphone); 
-        audio.play(); 
-        recorder = RecordRTC(microphone, { 
-            type: 'audio', 
-            recorderType: StereoAudioRecorder, 
-            numberOfAudioChannels: 1, // or leftChannel:true 
-            desiredSampRate: 16000 
-        }); 
-        recorder.startRecording(); 
-        // release microphone on stopRecording
-        recorder.microphone = microphone; 
-        document.getElementById('btn-stop-recording').disabled = false; 
-        }); 
-    }; 
-    document.getElementById('btn-stop-recording').onclick = function () { 
-    this.disabled = true; 
-    recorder.stopRecording(stopRecordingCallback); 
-    document.getElementById('btn-start-recording').disabled = false; 
-}; 
-
-
-
-
-function createAudioElement(blobUrl) { 
-    const downloadEl = document.createElement('a'); 
-    downloadEl.style = 'display: block'; 
-    downloadEl.innerHTML = 'download'; 
-    downloadEl.download = 'audio.wav'; 
-    downloadEl.href = blobUrl; 
-    const audioEl = document.createElement('audio'); 
-    audioEl.controls = true; 
-    const sourceEl = document.createElement('source'); 
-    sourceEl.src = blobUrl; 
-    sourceEl.type = 'audio/wav'; 
-    audioEl.appendChild(sourceEl); 
-    document.body.appendChild(audioEl); 
-    document.body.appendChild(downloadEl); 
-}
+function numberCounter(target_frame, target_number) {
+    this.count = 0; this.diff = 0;
+    this.target_count = parseInt(target_number);
+    this.target_frame = document.getElementById(target_frame);
+    this.timer = null;
+    this.counter();
+};
+    numberCounter.prototype.counter = function() {
+        var self = this;
+        this.diff = this.target_count - this.count;
+    
+        if(this.diff > 0) {
+            self.count += Math.ceil(this.diff / 5);
+        }
+    
+        this.target_frame.innerHTML = this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    
+        if(this.count < this.target_count) {
+            this.timer = setTimeout(function() { self.counter(); }, 1000);
+        } else {
+            clearTimeout(this.timer);
+        }
+    };
+    new numberCounter("counter1", 3000000);
