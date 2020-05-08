@@ -32,3 +32,6 @@ __Take a look!__
 
 >Myonghwan Lee
 <img width="1599" alt="MH_page" src="https://user-images.githubusercontent.com/56781342/81285438-7c1f2280-909a-11ea-82ba-e5e265bc8365.png">
+
+>Ina Woo
+<img src="https://user-images.githubusercontent.com/61706768/81444747-9f3cf580-91b2-11ea-9486-c71c3acad51f.png">
