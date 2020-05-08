@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="ina.css">
 </head>
 <body>
+
+    
+
 <div class="a">
     <div class="top">
         <div class="title">
@@ -41,7 +44,7 @@
                 <form action="searchBar">
                     <fieldset>
                         <input type="search" placeholder="검색어 입력">
-                        <button type="submit">검색
+                        <button type="submit" id="searchBtn"> 검색
                             <i class="search"></i>
                         </button>
                     </fieldset>    
@@ -69,20 +72,48 @@
                         <img src="volume.png" alt="speak" width="3%">
                     </p>
                 </div>
-                <div class="con2">뀨뀨
+                <div class="con2">
+                    <br>
+                    <p style="font-size: x-small;">
+                    여기서 잠깐 만든 사람 소개를 해볼게요<br>
+                    정보사회학과 17학번 우인아... 재수해서(TMI) 24살이에요<br>
+                    참고로 NO휴학 다이렉트로 다닐 예정인데 휴학하고 싶어요<br>
+                    커뮤니케이션 디자인과 다중전공 중입니다.<br>
+                    웹디자이너가 되고 싶어요...<br>
+                    음 제 꿈은요.. 철야해도 되니까 아침출근만 안하게 해주세요ㅛ<br>
+                    부끄러우니까 작게작게
+                    </p>
+
                     <div class="like-content">
-  
                         <span>
-                          Did you like this review? Press like to make it easier for others to see
+                        The color of my heart is black -GD-
                         </span>
-                        
                         <button class="btn-secondary like-review">
-                          <i class="fa fa-heart" aria-hidden="true"></i> Like
+                        ❤ Like
                         </button>
-                        
-                      </div>
+                    </div>
+
                 </div>
-                <div class="con3">안녕하니껴</div>
+                <div class="con3">
+                    <br>
+                    <h3>사투리 퀴즈</h3>
+                    <div class="container">
+                        <div class="section">
+                        <h3>＇돔배기＇는 무엇일까요?</h3>
+                        <p>힌트1. 경북 사투리 입니다!</p>
+                        <p>힌트2. 먹을 수 있는 것 입니다!</p>
+                        <p>힌트3. 바다에 사는 것 입니다!</p>
+                        </div>
+                        <div class="section collapsible">
+                        <p>정답은~~~~~</p>
+                        <p>두구두구두구두구둑두굳굳구</p>
+                        <p><b>상어고기!!!!</b> 입니다~~~</p>
+                        <p style="font-size: small;">돔배기는 경상북도 영천 지역에서 제사상 때 올려놓는 음식이다. 상어고기를 천일염에 간을 한 형태의 저장식품이다.</p>
+                        <p style="font-size: small;">출처:위키백과</p>
+                        </div>
+                    </div>
+                    <button id="toggle-button">펼치기/접기</button>
+                </div>
             </div>
         </div>
 
@@ -172,6 +203,12 @@ $(function(){
         $(this).children('.fa-heart').addClass('animate-like');
     });
 });
+</script>
+
+<script type="text/javascript">
+document.querySelector('#toggle-button').addEventListener('click', function() {
+    document.querySelector('.section.collapsible').classList.toggle('collapsed');
+  });
 </script>
 
 </body>
