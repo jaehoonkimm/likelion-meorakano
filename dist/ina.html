@@ -11,7 +11,7 @@
     <div class="top">
         <div class="title">
             <a href="http://likelion-meorakano.s3-website.ap-northeast-2.amazonaws.com/" target="_self">
-            <img src="title.png" width="22%" height="100%"></a>누르면 뒤로가여</div>
+            <img src="title.png" width="22%" height="100%"></a></div>
                 <div class="menu">
                     <ul id="nav">
                         <li><a href="메뉴1">오늘의사투리</a></li>
@@ -69,7 +69,19 @@
                         <img src="volume.png" alt="speak" width="3%">
                     </p>
                 </div>
-                <div class="con2">뀨뀨</div>
+                <div class="con2">뀨뀨
+                    <div class="like-content">
+  
+                        <span>
+                          Did you like this review? Press like to make it easier for others to see
+                        </span>
+                        
+                        <button class="btn-secondary like-review">
+                          <i class="fa fa-heart" aria-hidden="true"></i> Like
+                        </button>
+                        
+                      </div>
+                </div>
                 <div class="con3">안녕하니껴</div>
             </div>
         </div>
@@ -152,5 +164,15 @@
             }
         }
 </script>
+
+<script type="text/javascript">
+$(function(){
+    $(document).one('click', '.like-review', function(e) {
+        $(this).html('<i class="fa fa-heart" aria-hidden="true"></i> You liked this');
+        $(this).children('.fa-heart').addClass('animate-like');
+    });
+});
+</script>
+
 </body>
 </html>
