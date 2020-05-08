@@ -77,14 +77,14 @@ padding: 0;
 
 .up{ 
     position:fixed;
-    height: 20%;
+    height: 100px;
     margin-left: 50px;
     margin-top: 90px;
 }
 
 .down{
     position:fixed;
-    height: 20%;
+    height: 100px;
     margin-left: 50px;
     margin-top: 170px;
 }
